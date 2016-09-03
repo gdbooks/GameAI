@@ -1,4 +1,5 @@
 * [Introduction](README.md)
+  * [Test](Chapter01/README.md) 
 * [Game Playing](Chapter02/README.md)
 * [Search](Chapter03/README.md)
 * [Steering Behaviours](Chapter04/README.md)
