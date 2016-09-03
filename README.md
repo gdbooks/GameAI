@@ -1,1 +1,1 @@
-# GameAI
+# Introduction To AI
