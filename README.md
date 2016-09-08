@@ -80,3 +80,26 @@ Proper representation of knowledge within an agent is crucial to its ability to 
 ![Agent](Chapter01/agent.png)
 
 Behavioral knowledge can be temporary or persistent
+
+```cs
+class Agent {
+  Knowledge currentKnowledge;
+  Behaviour currentBehaviour;
+  
+  void Enter(); // Begin agent update cycle
+  void Update(); // Gathers perceptions / filters, runs behaviours
+  void Exit(); // Terminates agent update cycle
+}
+```
+
+```cs
+class Behaviour {
+  enum state { ACTIVE, SUCCESS, FAIL }
+  Behaviour Children = null;
+  
+  void Enter();
+  state Update(Agent agent, Deletgate Function, float deltaTime);
+  void Exit();
+  
+}
+```
