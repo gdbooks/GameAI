@@ -1,1 +1,57 @@
 # Introduction To AI
+
+### What is Intelligence
+
+* Logical Thought
+* Problem Solving
+* Decision Making
+* Learning / Adaptation
+
+### Kenneth Craik's Model
+
+An intelligent automation...
+
+* Uses a small scale model of reality
+* Is capable of performing actions
+* Has knowledge of the effects of it's actions
+* Uses inferences to make decisions
+
+### What is Artificial Intelligence?
+
+Computers are pretty good at:
+
+* Mathematical computation
+* Remembering Information
+
+But pretty bad at
+
+* Solving Problems
+* Making Decisions
+* Learning
+
+Trough AI we hope to give machines the ability to reason and to __Appear More Lifelike__
+
+## Agents
+
+We call an AI program or machine an __agent__
+
+| Types of agents | Behaviour |
+| -- | -- |
+| Reflex | Reactionary |
+| Goal-Based | Seeking some goal |
+| Utility-Based | Seeking some utility (happyness) |
+
+### Agent behaviours
+
+A __Behaviour__ is a way an agent thinks and acts
+
+Behaviours can be
+
+* Simple (ex, scripted) or
+* Complex (A composition of simple behaviours)
+
+When a behaviour terminates it either __Succeeds__ or __fails__. We'll use __Behaviour Trees__ to model agent behaviours
+
+## Sequences
+
+A __sequence__ is a set of behaviours. All behaviours in a sequence must complete for the sequence to succeed. If any behaviour fails, the sequence fails
