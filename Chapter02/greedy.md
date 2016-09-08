@@ -34,3 +34,5 @@ But the greedy method also has some drawbacks
 
 * It ignores the opponents potential reaction
 * It's short sighted / dumb / not optimal
+
+Games will often start out with a greedy AI and evolve into more sophisticated AI methods as needed.
