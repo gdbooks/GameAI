@@ -49,7 +49,7 @@ A __sequence__ is a set of behaviours, in which all behaviours must complete for
 
 ![Chapter01/sequence.png](Chapter01/sequence.png)
 
-## Selectors
+#### Selectors
 
 A __selector__ is a set of behaviours any one of which must compleate for the selector to succeed. If any child succeeds, the selector immediateley succeeds.
 
