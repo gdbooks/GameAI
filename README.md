@@ -7,7 +7,7 @@ The central question of AI programming is, what is intelligence? We can break in
 * Decision Making
 * Learning / Adaptation
 
-Many people have tried to come up with an all encompassing definition of intelligence. It's commonly aggreed that to automate intelligence it must:
+Many people have tried to come up with an all encompassing definition of intelligence. It's commonly agreed that to automate intelligence it must:
 
 * Uses a small scale model of reality
 * Is capable of performing actions
@@ -33,19 +33,19 @@ Trough AI we hope to give machines the ability to reason and to __Appear More Li
 
 We call an AI program or machine an __agent__. This is a very broad, all encompassing term! There can be many different types of agents!
 
-| Types of agents | Behaviour |
+| Types of agents | Behavior |
 | -- | -- |
 | Reflex | Reactionary |
 | Goal-Based | Seeking some goal |
-| Utility-Based | Seeking some utility (happyness) |
+| Utility-Based | Seeking some utility (happiness) |
 
-#### Agent behaviours
+#### Agent behaviors
 
-A __Behaviour__ is a way an agent thinks and acts Behaviours can be __simple__ (hard coded or scripted), or __complex__ (A composition of simple behaviours). When a behaviour terminates it either __Succeeds__ or __fails__. We'll use __Behaviour Trees__ to model agent behaviours
+A __Behavior__ is a way an agent thinks and acts Behaviors can be __simple__ (hard coded or scripted), or __complex__ (A composition of simple behaviors). When a behavior terminates it either __Succeeds__ or __fails__. We'll use __Behavior Trees__ to model agent behaviors
 
 #### Sequences
 
-A __sequence__ is a set of behaviours, in which all behaviours must complete for the sequence to succeed. If any behaviour fails, the sequence fails
+A __sequence__ is a set of behaviors, in which all behaviors must complete for the sequence to succeed. If any behavior fails, the sequence fails
 
 ![Chapter01/sequence.png](Chapter01/sequence.png)
 
