@@ -51,7 +51,7 @@ A __sequence__ is a set of behaviors, in which all behaviors must complete for t
 
 #### Selectors
 
-A __selector__ is a set of behaviours any one of which must compleate for the selector to succeed. If any child succeeds, the selector immediateley succeeds.
+A __selector__ is a set of behaviors any one of which must complete for the selector to succeed. If any child succeeds, the selector immediately succeeds.
 
 ![Selectpr](Chapter01/selector.png)
 
@@ -97,4 +97,4 @@ class Behaviour {
 
 ## Resources
 
-[AIGamedev.com](http://aigamedev.com/) is agreed to be the best AI resource online. However, there are no specific tutorials. IT's all fuzzy theory and logic. But that's kind of the nature of AI.
+[AIGamedev.com](http://aigamedev.com/) is agreed to be the best AI resource online. However, there are no specific tutorials. Is's all fuzzy theory and logic. But that's kind of the nature of AI.
