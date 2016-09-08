@@ -1,5 +1,8 @@
 * [Introduction](README.md)
 * [Game Playing](Chapter02/README.md)
+  * [Greedy](greedy.md) 
+  * [Min Max](minmax.md)
+  * [Alpha Beta Pruning](alphabeta.md)
 * [Search](Chapter03/README.md)
 * [Steering Behaviours](Chapter04/README.md)
 * [Genetic Algorithms](Chapter05/README.md)
