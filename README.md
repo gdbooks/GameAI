@@ -63,3 +63,20 @@ A __sequence__ is a set of behaviours, in which all behaviours must complete for
 A __selector__ is a set of behaviours any one of which must compleate for the selector to succeed. If any child succeeds, the selector immediateley succeeds.
 
 ![Selectpr](Chapter01/selector.png)
+
+## Knowledge Representation
+
+How an agent remembers...
+
+* The state of the world
+* Processed information
+* The actions it may perform
+* Consequences of its actions
+
+Proper representation of knowledge within an agent is crucial to its ability to function!
+
+## Agent Architecture
+
+![Agent](Chapter01/agent.png)
+
+Behavioral knowledge can be temporary or persistent
