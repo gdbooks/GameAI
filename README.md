@@ -70,7 +70,7 @@ Proper representation of knowledge within an agent is crucial to its ability to 
 
 ![Agent](Chapter01/agent.png)
 
-Behavioral knowledge can be temporary or persistent.
+Behavioral knowledge can be temporary or persistent. If this all sounds very all over the place and abstract, well it is. There is no standard to AI, every project just kind of makes up how AI works for it. Let's see some pseudo code?
 
 ```cs
 class Agent {
@@ -94,3 +94,7 @@ class Behaviour {
   
 }
 ```
+
+## Resources
+
+[AIGamedev.com](http://aigamedev.com/) is agreed to be the best AI resource online. However, there are no specific tutorials. IT's all fuzzy theory and logic. But that's kind of the nature of AI.
