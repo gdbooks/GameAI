@@ -1,15 +1,13 @@
 # Introduction To AI
 
-### What is Intelligence
+The central question of AI programming is, what is intelligence? We can break intelligence down into a few different areas:
 
 * Logical Thought
 * Problem Solving
 * Decision Making
 * Learning / Adaptation
 
-### Kenneth Craik's Model
-
-An intelligent automation...
+Many people have tried to come up with an all encompassing definition of intelligence. It's commonly agreed that an intelligent automation 
 
 * Uses a small scale model of reality
 * Is capable of performing actions
