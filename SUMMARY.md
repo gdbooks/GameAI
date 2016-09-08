@@ -1,7 +1,7 @@
 * [Introduction](README.md)
 * [Game Playing](Chapter02/README.md)
   * [Greedy](Chapter02/greedy.md) 
-  * [Min Max](Chapter02/minmax.md)
+  * [Minimax](Chapter02/minmax.md)
   * [Alpha Beta Pruning](Chapter02/alphabeta.md)
 * [Search](Chapter03/README.md)
 * [Steering Behaviours](Chapter04/README.md)
