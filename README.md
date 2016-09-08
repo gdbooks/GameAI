@@ -57,7 +57,7 @@ A __selector__ is a set of behaviours any one of which must compleate for the se
 
 ## Knowledge Representation
 
-How an agent remembers...
+Computers might have memory on a chip, but they don't have actual memory ;) You have to figure out how to represent your world using the primitive data available within code. Knowledge representation is how an agent remembers...
 
 * The state of the world
 * Processed information
@@ -70,7 +70,7 @@ Proper representation of knowledge within an agent is crucial to its ability to 
 
 ![Agent](Chapter01/agent.png)
 
-Behavioral knowledge can be temporary or persistent
+Behavioral knowledge can be temporary or persistent.
 
 ```cs
 class Agent {
