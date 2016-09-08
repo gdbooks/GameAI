@@ -22,5 +22,15 @@ Move Greedy(player, gameState) {
     
     return bestMove;
 }
-
 ```
+
+The greedy method has some distinct benefits:
+
+* It is __FAST__
+* It used moderate memory
+* It uses moderate CPU time
+
+But the greedy method also has some drawbacks
+
+* It ignores the opponents potential reaction
+* It's short sighted / dumb / not optimal
