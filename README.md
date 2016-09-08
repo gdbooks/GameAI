@@ -54,4 +54,12 @@ When a behaviour terminates it either __Succeeds__ or __fails__. We'll use __Beh
 
 ## Sequences
 
-A __sequence__ is a set of behaviours. All behaviours in a sequence must complete for the sequence to succeed. If any behaviour fails, the sequence fails
+A __sequence__ is a set of behaviours, in which all behaviours must complete for the sequence to succeed. If any behaviour fails, the sequence fails
+
+![Chapter01/sequence.png](Chapter01/sequence.png)
+
+## Selectors
+
+A __selector__ is a set of behaviours any one of which must compleate for the selector to succeed. If any child succeeds, the selector immediateley succeeds.
+
+![Selectpr](Chapter01/selector.png)
