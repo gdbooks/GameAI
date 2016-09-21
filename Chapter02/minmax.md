@@ -1,8 +1,8 @@
 ## The Minimax Method
 
-The MiniMax method searches trough several levels of moves, it always assumes that the opponent will make the best move available. 
+The MiniMax method searches trough several levels of moves, it always assumes that the opponent will make the best move available. Here is a video that provied a great introduction to the minimax algorithm. It goes into advanced topics like aplha-beta pruning.
 
-{% youtube %}https://www.youtube.com/watch?v=9bZkp7q19f0{% endyoutube %}
+{% youtube %}https://www.youtube.com/watch?v=6ELUvkSkCts{% endyoutube %}
 
 
 ```cs
