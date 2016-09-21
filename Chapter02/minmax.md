@@ -2,6 +2,8 @@
 
 The MiniMax method searches trough several levels of moves, it always assumes that the opponent will make the best move available. 
 
+{% youtube %}https://www.youtube.com/watch?v=9bZkp7q19f0{% endyoutube %}
+
 
 ```cs
 Move MiniMax(Player player, GameState gameState) {
