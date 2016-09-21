@@ -1,3 +1,32 @@
 ## The Minimax Method
 
-The MiniMax method searches trough several levels of moves, it always assumes that the opponent will make the best move available. This is avhieved by substituting AI for both players, the AI's names are minimus and maximus, hence the name of the method.
+The MiniMax method searches trough several levels of moves, it always assumes that the opponent will make the best move available. 
+
+
+```cs
+Move MiniMax(Player player, GameState gameState) {
+    Move bestMove = null;
+    GameState newState = new GameState();
+    
+    // Generate all valid moves for player
+    List<Move> validMoves = GenerateValidMoves(player, gameState);
+    
+    foreach(Move move in validMoves) {
+        newState.Copy(gameState);
+        newState.Apply(move);
+        
+        if (newState.IsTerminal) {
+            move.Rank = Evaluate(newState);
+        }
+        else {
+            move.Rank = MiniMax(nextPlayer, newState).Rank;
+        }
+        
+        if (bestMove == null || move.Rank > bestMove.Rank) {
+            bestMove = move;
+        }
+    }
+    
+    return bestMove;
+}
+```
