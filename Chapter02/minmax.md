@@ -50,6 +50,43 @@ Move MiniMax(Player player, GameState gameState) {
 Functions such as ```Evaluate```, ```GenerateValidMoves``` and ```NextPlayer()``` are game specific. the ```-is better than-``` section works the same way that it did for the ```Greedy``` algorithm.
 
 #### Comparison
-Compare the pseudo-code provided in this section, to the code provided in the last section! The gredy method simply evaluates a move as:
+Compare the pseudo-code provided in this section, to the code provided in the last section! The greedy method simply evaluates a move as:
 
+ ```cs
+ move.Rank = Evaluate(newState);
+ ```
  
+ Where the MiniMax method changes this to:
+ 
+ ```cs
+ if (newState.IsTerminal) {
+    move.Rank = Evaluate(newState);
+}
+else {
+    move.Rank = MiniMax(NextPlayer(), newState).Rank;
+}
+```
+
+The rest of the code is identical. This bit of code, the recursion, is what gives the minimax algorithm the ability to look ahead and make the best possible decisions.
+
+#### Drawbacks
+There are drawbacks to the minimax algorithm:
+
+* Depth First Traversal
+  * This could be VERY time consuming!
+  * The larger the game area, the more time it takes to calculate best move.
+  * Primary reason that chess is so hard to write AI for
+* No "Forfeit" moves
+  * Sometimes its better to skip a turn with a strategy for the next move
+  * This can not be done in a generic manner 
+* Unnecessary Branching
+  * In the list of valid moves, there are moves that we can reason don't need to be made 
+* No random capacity 
+  * No support for dice, cards, etc..
+
+In the same order as the above list, there are mitigation techniques for each of the drawbacks
+
+* Depth limit
+* Forfeit Recognition
+* Alpha-Beta Pruning
+* Chance Nodes
