@@ -15,7 +15,7 @@ Move Greedy(Player player, GameState gameState) {
         newState.Apply(move);
         move.Rank = Evaluate(newState);
         
-        if (bestMove == null || move.Rank > bestMove.Rank) {
+        if (bestMove == null || move.Rank -is better than- bestMove.Rank) {
             bestMove = move;
         }
     }
