@@ -4,6 +4,9 @@ The MiniMax method searches trough several levels of moves, it always assumes th
 
 {% youtube %}https://www.youtube.com/watch?v=6ELUvkSkCts{% endyoutube %}
 
+#### The Algorithm
+
+The algorithm for minimax is simple, as it is just a recursive function!
 
 ```cs
 Move MiniMax(Player player, GameState gameState) {
