@@ -7,10 +7,10 @@ Move Greedy(Player player, GameState gameState) {
     Move bestMove = null;
     GameState newState = new GameState();
     
-    List<Move> moves = // Generate valid moves
-    Move bestMove = null;
+    // Generate all valid moves for player
+    List<Move> validMoves = GenerateValidMoves(player, gameState);
     
-    foreach(Move move in moves) {
+    foreach(Move move in validMoves) {
         newState.Copy(gameState);
         newState.Apply(move);
         move.Rank = Evaluate(newState);
