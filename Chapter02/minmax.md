@@ -96,3 +96,4 @@ In the same order as the above list, there are mitigation techniques for each of
 * Alpha-Beta Pruning
   * We will talk in-depth about this later 
 * Chance Nodes
+  * This will get it's own section too! 
