@@ -47,33 +47,7 @@ Move MiniMax(Player player, GameState gameState) {
 }
 ```
 
-Functions such as ```Evaluate```, ```GenerateValidMoves``` and ```NextPlayer()``` are game specific. The comparison of move ranks might look a bit confusing. This is because for player 1 a negative number is better, for player 2 a positive number is better. That if block could be written as:
-
-```
-if (bestMove == null) {
-    bestMove = move;
-}
-if (player == GetPlayer1()) {
-    if (move.Rank < bestMove.Rank) {
-        bestMove = move;
-    }
-}
-else if (player == GetPlayer2()) {
-    if (move.Rank > bestMove.Rank) {
-        bestMove = move;
-    }
-}
-```
-
-Or, even move compactly as:
-
-```cs
-bool betterMove = (player == GetPlayer1())? (move.Rank < bestMove.Rank) : (move.Rank > bestMove.Rank);
-if (bestMove == null || betterMove) {
-    bestMove = new ComputerMove(row, col);
-    bestMove.rank = currentRank;
-}
-```
+Functions such as ```Evaluate```, ```GenerateValidMoves``` and ```NextPlayer()``` are game specific.
 
 #### Comparison
 Compare the pseudo-code provided in this section, to the code provided in the last section!
