@@ -6,7 +6,18 @@ The MiniMax method searches trough several levels of moves, it always assumes th
 
 #### The Algorithm
 
-The algorithm for minimax is simple, as it is just a recursive function! 
+The algorithm for minimax is simple, as it is just a recursive function! It follows these steps:
+
+* Try to make all valid moves
+  * If a move is terminal, evaluate it's value
+  * If a move is not terminal, recurse with the next player
+    * Set the value of the move to the value of the recursion
+  * Compare each move against the best move
+    * If the move is better, store it as the best move    
+* Return the best move
+
+In code, this would look something like so:
+
 
 ```cs
 Move MiniMax(Player player, GameState gameState) {
@@ -63,3 +74,5 @@ if (bestMove == null || betterMove) {
     bestMove.rank = currentRank;
 }
 ```
+
+ 
