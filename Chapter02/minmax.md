@@ -53,3 +53,13 @@ else if (player == GetPlayer2()) {
     }
 }
 ```
+
+Or, even move compactly as:
+
+```cs
+bool betterMove = (player == GetPlayer1())? (move.Rank < bestMove.Rank) : (move.Rank > bestMove.Rank);
+if (bestMove == null || betterMove) {
+    bestMove = new ComputerMove(row, col);
+    bestMove.rank = currentRank;
+}
+```
