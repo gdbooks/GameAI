@@ -3,7 +3,7 @@
 The __Greedy Method__ picks the move that yields the most immediately valuable game state. Let's take a look at some pseudo code that demonstrates this.
 
 ```
-Move Greedy(player, gameState) {
+Move Greedy(Player player, GameState gameState) {
     Move bestMove = null;
     GameState newState = new GameState();
     
