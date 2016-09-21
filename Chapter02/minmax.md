@@ -75,4 +75,7 @@ if (bestMove == null || betterMove) {
 }
 ```
 
+#### Comparison
+Compare the pseudo-code provided in this section, to the code provided in the last section!
+
  
