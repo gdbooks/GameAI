@@ -87,6 +87,8 @@ There are drawbacks to the minimax algorithm:
 In the same order as the above list, there are mitigation techniques for each of the drawbacks
 
 * Depth limit
+  * The deeper the limit, the more difficult the AI
+  * Easy way to add "Difficulty" to a game 
 * Forfeit Recognition
 * Alpha-Beta Pruning
 * Chance Nodes
