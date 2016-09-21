@@ -6,7 +6,7 @@ The MiniMax method searches trough several levels of moves, it always assumes th
 
 #### The Algorithm
 
-The algorithm for minimax is simple, as it is just a recursive function!
+The algorithm for minimax is simple, as it is just a recursive function! 
 
 ```cs
 Move MiniMax(Player player, GameState gameState) {
@@ -24,14 +24,32 @@ Move MiniMax(Player player, GameState gameState) {
             move.Rank = Evaluate(newState);
         }
         else {
-            move.Rank = MiniMax(nextPlayer, newState).Rank;
+            move.Rank = MiniMax(NextPlayer(), newState).Rank;
         }
         
-        if (bestMove == null || move.Rank > bestMove.Rank) {
+        if (bestMove == null || move.Rank -is better than- bestMove.Rank) {
             bestMove = move;
         }
     }
     
     return bestMove;
+}
+```
+
+Functions such as ```Evaluate```, ```GenerateValidMoves``` and ```NextPlayer()``` are game specific. The comparison of move ranks might look a bit confusing. This is because for player 1 a negative number is better, for player 2 a positive number is better. That if block could be written as:
+
+```
+if (bestMove == null) {
+    bestMove = move;
+}
+if (player == GetPlayer1()) {
+    if (move.Rank < bestMove.Rank) {
+        bestMove = move;
+    }
+}
+else if (player == GetPlayer2()) {
+    if (move.Rank > bestMove.Rank) {
+        bestMove = move;
+    }
 }
 ```
