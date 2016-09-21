@@ -47,9 +47,9 @@ Move MiniMax(Player player, GameState gameState) {
 }
 ```
 
-Functions such as ```Evaluate```, ```GenerateValidMoves``` and ```NextPlayer()``` are game specific.
+Functions such as ```Evaluate```, ```GenerateValidMoves``` and ```NextPlayer()``` are game specific. the ```-is better than-``` section works the same way that it did for the ```Greedy``` algorithm.
 
 #### Comparison
-Compare the pseudo-code provided in this section, to the code provided in the last section!
+Compare the pseudo-code provided in this section, to the code provided in the last section! The gredy method simply evaluates a move as
 
  
